@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "小帅"
-theme = "tranquilpeak"
+baseURL = "http://me.ssscode.com/"
+languageCode = "zh-CN"
+title = "小帅の生活"
+theme = "next"
