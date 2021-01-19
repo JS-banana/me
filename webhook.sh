@@ -2,6 +2,8 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+cd /usr/local/app/hexo-blog/public
+
 echo 'start===>git'
 
 git reset --hard origin/master
