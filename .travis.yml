@@ -1,0 +1,30 @@
+# 使用语言
+language: node_js
+# node版本
+node_js: stable
+# 设置只监听哪个分支
+branches:
+  only:
+    - gh-pages
+# 缓存，可以节省集成的时间
+cache:
+  directories:
+    - node_modules
+
+script:
+  - git checkout gh-pages
+  - git init
+  - git config user.name "${USER_NAME}"
+  - git config user.email "${USER_EMAIL}"
+  - git add .
+  - git commit -m "$(date) Update from Travis"
+  - git push --force --quiet "https://ptzv1yuleer1:${CODING_TOKEN}@${GH_REF}" master:master
+  # - git push --force --quiet "https://${CDT_TOKEN}@${CDT_REF}" master:master
+
+# 环境变量
+# 目前只有 GH_TOKEN 是需要在 Travis 配置的
+env:
+  global:
+    - USER_NAME="travis"
+    - USER_EMAIL="sss213018@163.com"
+    - GH_REF="e.coding.net/ssscode/blog/hexo.git"

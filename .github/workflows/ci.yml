@@ -1,0 +1,44 @@
+name: CI
+
+#on: [push]
+
+# 在master分支发生push事件时触发。
+on:
+  push:
+    branches:
+      - master
+
+jobs: # 工作流
+  build: # 自定义名称
+    runs-on: ubuntu-latest #运行在虚拟机环境ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps: # 步骤
+      - name: Checkout # 步骤1
+        uses: actions/checkout@v1 # 使用的动作。格式：userName/repoName。作用：检出仓库，获取源码。 官方actions库：https://github.com/actions
+
+      - name: Use Node.js ${{ matrix.node-version }} # 步骤2
+        uses: actions/setup-node@v1 # 作用：安装nodejs
+        with:
+          node-version: ${{ matrix.node-version }} # 版本
+
+      - name: Setup Git Env
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
+          CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
+
+      - name: Setup Hexo CI
+        run: |
+          npm i -g hexo-cli # 全局安装需要的库。npm i
+
+      - name: Setup other package
+        run: |
+          npm install
+
+      - name: Deploy
+        run: |
+          rm -rf .deploy_git
+          hexo g && hexo deploy # 开始部署

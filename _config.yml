@@ -131,9 +131,15 @@ excerpt:
 deploy:
   type: git
   repo:
-    github: git@github.com:JS-banana/hexo.git
-    coding: git@e.coding.net:ssscode/blog/hexo.git
-  branch: master
+    github:
+      url: https://github.com/JS-banana/hexo.git
+      branch: gh-pages
+      token: $GITHUB_TOKEN
+    # coding:
+    #   url: git@e.coding.net:ssscode/blog/hexo.git
+    #   branch: gh-pages
+    #   token: $CODING_TOKEN
+  # branch: master
 # coding
 # ssh-deploy-hexo-blog-SSH
 # ~/.ssh/authorized_keys
