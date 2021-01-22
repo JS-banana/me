@@ -135,6 +135,10 @@ deploy:
       url: https://github.com/JS-banana/hexo.git
       branch: gh-pages
       token: $GITHUB_TOKEN
+    # coding:
+    #   url: https://e.coding.net/ssscode/blog/hexo.git
+    #   branch: gh-pages
+    #   token: $CODING_TOKEN
   name: github-ci
   email:
     sss213018@163.com
