@@ -20,7 +20,7 @@ echo 'me.ssscode.com' > CNAME  # 自定义域名
 git init
 git add -A
 git commit -m "coding.sh===>update：${nowDate}"
-git push -f "https://ptzv1yuleer1:${CODING_TOKEN}@${GH_REF}" master:gh-pages # 推送到 coding 
+git push -f "https://ptzv1yuleer1:${CODING_TOKEN}@${GH_REF}" master:master # 推送到 coding 
 
 cd - # 退回开始所在目录
 rm -rf .deploy_git
