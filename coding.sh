@@ -15,7 +15,7 @@ cd ./.deploy_git
 GH_REF="e.coding.net/ssscode/blog/hexo.git"
 nowDate=$(date "+%Y-%m-%d %H:%M:%S")
 
-echo 'me.ssscode.com' > CNAME  # 自定义域名
+# echo 'me.ssscode.com' > CNAME  # 自定义域名
 
 git init
 git add -A
