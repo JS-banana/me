@@ -12,7 +12,9 @@ nowDate=$(date "+%Y-%m-%d %H:%M:%S")
 
 # 进入生成的文件夹
 # cd ./.deploy_git
-cd ./public
+# cd ./public
+# 直接推送至coding使用hexo环境部署
+rm -rf public .deploy_git
 
 # var
 GH_REF="e.coding.net/ssscode/blog/hexo.git"
