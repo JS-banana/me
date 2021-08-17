@@ -31,7 +31,7 @@ git add -A
 git commit -m "coding.sh===>update：${nowDate}"
 git push -f "https://ptzv1yuleer1:${CODING_TOKEN}@${GH_REF}" master:master # 推送到 coding 
 
-cd - # 退回开始所在目录
+# cd - # 退回开始所在目录
 # rm -rf .deploy_git
 
 echo '部署到coding====>完成'
