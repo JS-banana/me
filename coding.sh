@@ -10,6 +10,14 @@ echo '部署到coding====>开始...'
 # date
 nowDate=$(date "+%Y-%m-%d %H:%M:%S")
 
+echo '1.查看内容是否存在====>./public/index.html'
+cat ./public/index.html # 查看内容是否存在
+
+echo '2.查看内容是否存在====>./public/index.html'
+cat ./.deploy_git/index.html # 查看内容是否存在
+
+echo '文件查看结束=======>'
+
 # 进入生成的文件夹
 # cd ./.deploy_git
 rm -rf .git
