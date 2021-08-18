@@ -30,8 +30,8 @@ jobs: # 工作流
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
           CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
         run: |
-          npm i -g hexo-cli # 全局安装需要的库。npm i
+          # npm i -g hexo-cli # 全局安装需要的库。npm i
           npm install
-          hexo clean && hexo g # 开始部署
+          npx hexo clean && npx hexo g # 开始部署
           npm run coding # 部署到 coding
           # hexo d
