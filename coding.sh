@@ -10,10 +10,12 @@ echo '部署到coding====>开始...'
 # date
 nowDate=$(date "+%Y-%m-%d %H:%M:%S")
 
+ls # 查看目录
+
 echo '1.查看内容是否存在====>./public/index.html'
 cat ./public/index.html # 查看内容是否存在
 
-echo '2.查看内容是否存在====>./public/index.html'
+echo '2.查看内容是否存在====>./.deploy_git/index.html'
 cat ./.deploy_git/index.html # 查看内容是否存在
 
 echo '文件查看结束=======>'
