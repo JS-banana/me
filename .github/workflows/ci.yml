@@ -32,8 +32,8 @@ jobs: # 工作流
         run: |
           npm install # 安装依赖
           npx hexo -v # 查看版本
-          rm -rf themes
-          git clone https://github.com/JS-banana/hexo-theme-next themes/next
+          rm -rf themes # 先删除再安装主题，解决hexo g构建时，缺失layout的问题
+          git clone https://github.com/JS-banana/hexo-theme-next themes/next # 获取我的仓库hexo镜像
           npm run clean # 清理
           npm run build # 构建 
           npm run deploy # hexo脚本部署到github-pages
