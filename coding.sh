@@ -12,7 +12,9 @@ nowDate=$(date "+%Y-%m-%d %H:%M:%S")
 
 # 进入生成的文件夹
 # cd ./.deploy_git
+rm -rf .git
 cd ./public
+git init
 
 # var
 GH_REF="e.coding.net/ssscode/blog/hexo.git"
@@ -23,7 +25,6 @@ nowDate=$(date "+%Y-%m-%d %H:%M:%S")
 git config --global user.name "JS-banana"
 git config --global user.email "sss213018@163.com"
 
-git init
 git add -A
 git commit -m "coding.sh===>update：${nowDate}"
 git push -f "https://ptzv1yuleer1:${CODING_TOKEN}@${GH_REF}" master:master # 推送到 coding 
