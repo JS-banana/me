@@ -37,5 +37,9 @@ jobs: # 工作流
           npm run clean # 清理
           npm run build # 构建 
           # npm run deploy # hexo脚本部署到github-pages
-          npm run deploy:github
           npm run coding # 部署到 coding
+          #
+          # 单独部署至 GitHub
+          npm run clean # 清理
+          npm run build:github # 构建 
+          npm run deploy:github

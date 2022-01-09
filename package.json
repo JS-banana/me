@@ -8,6 +8,7 @@
     "deploy": "hexo deploy",
     "server": "hexo server",
     "coding": "bash coding.sh",
+    "build:github": "hexo generate --config _github.yml",
     "deploy:github": "hexo deploy --config _github.yml"
   },
   "hexo": {
