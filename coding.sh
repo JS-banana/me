@@ -13,12 +13,12 @@ nowDate=$(date "+%Y-%m-%d %H:%M:%S")
 ls # 查看目录
 
 echo '1.查看内容是否存在====>./public/index.html'
-cat ./public/index.html # 查看内容是否存在
+find ./public/index.html # 查看内容是否存在
 
 echo '2.查看内容是否存在====>./.deploy_git/index.html'
-cat ./.deploy_git/index.html # 查看内容是否存在
+find ./.deploy_git/index.html # 查看内容是否存在
 
-echo '文件查看结束=======>'
+# echo '文件查看结束=======>'
 
 # 进入生成的文件夹
 # cd ./.deploy_git
