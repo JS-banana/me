@@ -7,7 +7,8 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "coding": "bash coding.sh"
+    "coding": "bash coding.sh",
+    "deploy:github": "hexo deploy --config _github.yml"
   },
   "hexo": {
     "version": "5.3.0"
