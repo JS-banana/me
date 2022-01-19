@@ -40,7 +40,7 @@ jobs: # 工作流
 
       - name: Deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.CODING_TOKEN }} # toKen私密变量
+          CODING_TOKEN: ${{ secrets.CODING_TOKEN }} # toKen私密变量
         run: |
           npx hexo -v # 查看版本
           rm -rf themes # 先删除再安装主题，解决hexo g构建时，缺失layout的问题
