@@ -1,4 +1,4 @@
-name: CI
+name: Deploy Github/Coding
 
 #on: [push]
 
@@ -17,20 +17,32 @@ jobs: # 工作流
         node-version: [14.x]
 
     steps: # 步骤
-      - name: Checkout # 步骤1
-        uses: actions/checkout@v1 # 使用的动作。格式：userName/repoName。作用：检出仓库，获取源码。 官方actions库：https://github.com/actions
+      # 1.检出仓库
+      - name: Checkout
+        uses: actions/checkout@v2
 
-      - name: Use Node.js ${{ matrix.node-version }} # 步骤2
-        uses: actions/setup-node@v1 # 作用：安装nodejs
+      # 2. 设置pnpm包管理器
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
         with:
-          node-version: ${{ matrix.node-version }} # 版本
+          version: 6.15.1
 
-      - name: Setup Env 、Install 、 Deploy
+      # 3. 安装nodejs
+      - name: Set node version to ${{ matrix.node_version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node_version }}
+          cache: "pnpm" # 缓存
+
+      # 4.安装依赖
+      - name: Install deps
+        run: pnpm install
+
+      - name: Deploy
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
           CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
         run: |
-          npm install # 安装依赖
           npx hexo -v # 查看版本
           rm -rf themes # 先删除再安装主题，解决hexo g构建时，缺失layout的问题
           git clone https://github.com/JS-banana/hexo-theme-next themes/next # 获取我的仓库hexo镜像

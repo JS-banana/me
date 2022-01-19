@@ -4,8 +4,8 @@
 
 # Site
 title: 小帅の生活
-subtitle: '这是一个琐碎の生活记录'
-description: '这里记录我的生活经历、感悟、思考、反思、读后感、文章和故事'
+subtitle: "这是一个琐碎の生活记录"
+description: "这里记录我的生活经历、感悟、思考、反思、读后感、文章和故事"
 keywords: 生活、思考、反思、读后感、文章、感悟
 author: 小帅不太帅
 language: zh-CN
@@ -13,8 +13,8 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://js-banana.github.io/hexo/
-root: /hexo/
+url: https://js-banana.github.io/me/
+root: /me/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -39,7 +39,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -49,21 +49,21 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: true
 prismjs:
   enable: true
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -83,7 +83,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -117,7 +117,7 @@ symbols_count_time:
   exclude_codeblock: false
   awl: 4
   wpm: 275
-  suffix: 'mins.'
+  suffix: "mins."
 
 #阅读更多
 excerpt:
@@ -132,7 +132,7 @@ deploy:
   type: git
   repo:
     github:
-      url: https://github.com/JS-banana/hexo.git
+      url: https://github.com/JS-banana/me.git
       branch: gh-pages
       token: $GITHUB_TOKEN
   name: github-ci

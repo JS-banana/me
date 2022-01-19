@@ -1,19 +1,33 @@
-# 小帅の生活
+<p align="center">
+  <a href="https://ssscode.com/" target="_blank" rel="noopener noreferrer">
+    <img width="180" src="https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/avatar-ssscode.jpg" alt="logo">
+  </a>
+</p>
 
-## 这是一个琐碎の生活记录
+<p align="center">
+  <a href="https://github.com/JS-banana/me">
+    <img src="https://visitor-badge.glitch.me/badge?page_id=js-banana.me" alt="me">
+  </a>
+  <a href="https://github.com/JS-banana/me/stargazers">
+    <img src="https://img.shields.io/github/stars/JS-banana/me" alt="stars">
+  </a>
+  <a href="https://github.com/JS-banana/me/actions/workflows/deploy_github.yml">
+    <img src="https://github.com/JS-banana/me/actions/workflows/deploy_github.yml/badge.svg" alt="github">
+  </a>
+  <a href="https://github.com/JS-banana/me/actions/workflows/deploy_coding.yml">
+    <img src="https://github.com/JS-banana/me/actions/workflows/deploy_coding.yml/badge.svg" alt="coding">
+  </a>
+</p>
 
-### hexo next 使用记录
+<h1 align="center">小帅の生活</h1>
 
-- 创建文章
+<p align="center">
+这是一个琐碎の生活记录
+</p>
 
-  ```bash
-  # 终端输入指令
-  hexo new 我的观后感 --p /电影/夺冠
-  # 最终输出： /source/_post/电影/夺冠.md
-  # 文章内容title为 我的观后感
-
-  # 语法：hexo new [layout] <title> --path 路径
-  # layout 文章类型，默认为post，可省略不写
-  # title 标题 必填项
-  # --path 路径 可简写为 --p layout为post时 开始路径为 /source/_post/
-  ```
+<h6 align="center">
+  Github的部署：<a href="https://JS-banana.github.io/me">https://JS-banana.github.io/me</a>
+</h6>
+<h6 align="center">
+  个人服务器：<a href="http://me.ssscode.com/">http://me.ssscode.com/</a>
+</h6>
