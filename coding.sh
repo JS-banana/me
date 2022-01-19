@@ -12,11 +12,11 @@ nowDate=$(date "+%Y-%m-%d %H:%M:%S")
 
 ls # 查看目录
 
-echo '1.查看内容是否存在====>./public/index.html'
-find ./public/index.html # 查看内容是否存在
+# echo '1.查看内容是否存在====>./public/index.html'
+# find ./public/index.html # 查看内容是否存在
 
-echo '2.查看内容是否存在====>./.deploy_git/index.html'
-find ./.deploy_git/index.html # 查看内容是否存在
+# echo '2.查看内容是否存在====>./.deploy_git/index.html'
+# find ./.deploy_git/index.html # 查看内容是否存在
 
 # echo '文件查看结束=======>'
 
