@@ -6,6 +6,7 @@ specifiers:
   hexo-excerpt: ^1.1.6
   hexo-generator-archive: ^1.0.0
   hexo-generator-category: ^1.0.0
+  hexo-generator-feed: ^3.0.0
   hexo-generator-index: ^2.0.0
   hexo-generator-searchdb: ^1.3.3
   hexo-generator-tag: ^1.0.0
@@ -29,6 +30,9 @@ dependencies:
   hexo-renderer-stylus: 2.0.1
   hexo-server: 2.0.0
   hexo-symbols-count-time: 0.7.1
+
+devDependencies:
+  hexo-generator-feed: registry.npmmirror.com/hexo-generator-feed/3.0.0
 
 packages:
 
@@ -209,7 +213,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: false
 
   /cliui/2.1.0:
@@ -479,14 +483,6 @@ packages:
   /fs.realpath/1.0.0:
     resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
     dev: false
-
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    dev: false
-    optional: true
 
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
@@ -1536,3 +1532,262 @@ packages:
       decamelize: 1.2.0
       window-size: 0.1.0
     dev: false
+
+  registry.npmmirror.com/a-sync-waterfall/1.0.1:
+    resolution: {integrity: sha1-dba2qnJZi0l6El56J3DxT0yKH6c=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/a-sync-waterfall/download/a-sync-waterfall-1.0.1.tgz}
+    name: a-sync-waterfall
+    version: 1.0.1
+    dev: true
+
+  registry.npmmirror.com/asap/2.0.6:
+    resolution: {integrity: sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/asap/download/asap-2.0.6.tgz}
+    name: asap
+    version: 2.0.6
+    dev: true
+
+  registry.npmmirror.com/bluebird/3.7.2:
+    resolution: {integrity: sha1-nyKcFb4nJFT/qXOs4NvueaGww28=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/bluebird/download/bluebird-3.7.2.tgz}
+    name: bluebird
+    version: 3.7.2
+    dev: true
+
+  registry.npmmirror.com/camel-case/4.1.2:
+    resolution: {integrity: sha1-lygHKpVPgFIoIlpt7qazhGHhvVo=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/camel-case/download/camel-case-4.1.2.tgz}
+    name: camel-case
+    version: 4.1.2
+    dependencies:
+      pascal-case: registry.npmmirror.com/pascal-case/3.1.2
+      tslib: registry.npmmirror.com/tslib/2.3.1
+    dev: true
+
+  registry.npmmirror.com/commander/5.1.0:
+    resolution: {integrity: sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/commander/download/commander-5.1.0.tgz}
+    name: commander
+    version: 5.1.0
+    engines: {node: '>= 6'}
+    dev: true
+
+  registry.npmmirror.com/cross-spawn/7.0.3:
+    resolution: {integrity: sha1-9zqFudXUHQRVUcF34ogtSshXKKY=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/cross-spawn/download/cross-spawn-7.0.3.tgz?cache=0&sync_timestamp=1633008972693&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcross-spawn%2Fdownload%2Fcross-spawn-7.0.3.tgz}
+    name: cross-spawn
+    version: 7.0.3
+    engines: {node: '>= 8'}
+    dependencies:
+      path-key: registry.npmmirror.com/path-key/3.1.1
+      shebang-command: registry.npmmirror.com/shebang-command/2.0.0
+      which: registry.npmmirror.com/which/2.0.2
+    dev: true
+
+  registry.npmmirror.com/deepmerge/4.2.2:
+    resolution: {integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/deepmerge/download/deepmerge-4.2.2.tgz}
+    name: deepmerge
+    version: 4.2.2
+    engines: {node: '>=0.10.0'}
+    dev: true
+
+  registry.npmmirror.com/dom-serializer/1.3.2:
+    resolution: {integrity: sha1-YgZDfTLO767HFhgDIwx6ILwbTZE=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/dom-serializer/download/dom-serializer-1.3.2.tgz}
+    name: dom-serializer
+    version: 1.3.2
+    dependencies:
+      domelementtype: registry.npmmirror.com/domelementtype/2.2.0
+      domhandler: registry.npmmirror.com/domhandler/4.3.0
+      entities: registry.npmmirror.com/entities/2.2.0
+    dev: true
+
+  registry.npmmirror.com/domelementtype/2.2.0:
+    resolution: {integrity: sha1-mgtsJ4LtahxzI9QiZxg9+b2LHVc=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/domelementtype/download/domelementtype-2.2.0.tgz}
+    name: domelementtype
+    version: 2.2.0
+    dev: true
+
+  registry.npmmirror.com/domhandler/4.3.0:
+    resolution: {integrity: sha512-fC0aXNQXqKSFTr2wDNZDhsEYjCiYsDWl3D01kwt25hm1YIPyDGHvvi3rw+PLqHAl/m71MaiF7d5zvBr0p5UB2g==, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/domhandler/download/domhandler-4.3.0.tgz}
+    name: domhandler
+    version: 4.3.0
+    engines: {node: '>= 4'}
+    dependencies:
+      domelementtype: registry.npmmirror.com/domelementtype/2.2.0
+    dev: true
+
+  registry.npmmirror.com/domutils/2.8.0:
+    resolution: {integrity: sha1-RDfe9dtuLR9dbuhZvZXKfQIEgTU=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/domutils/download/domutils-2.8.0.tgz}
+    name: domutils
+    version: 2.8.0
+    dependencies:
+      dom-serializer: registry.npmmirror.com/dom-serializer/1.3.2
+      domelementtype: registry.npmmirror.com/domelementtype/2.2.0
+      domhandler: registry.npmmirror.com/domhandler/4.3.0
+    dev: true
+
+  registry.npmmirror.com/entities/2.2.0:
+    resolution: {integrity: sha1-CY3JDruD2N/6CJ1VJWs1HTTE2lU=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/entities/download/entities-2.2.0.tgz}
+    name: entities
+    version: 2.2.0
+    dev: true
+
+  registry.npmmirror.com/fsevents/2.3.2:
+    resolution: {integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/fsevents/download/fsevents-2.3.2.tgz}
+    name: fsevents
+    version: 2.3.2
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  registry.npmmirror.com/hexo-generator-feed/3.0.0:
+    resolution: {integrity: sha1-QSbvXjCCZMQlmfsO/a+I7RH6WZ4=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/hexo-generator-feed/download/hexo-generator-feed-3.0.0.tgz}
+    name: hexo-generator-feed
+    version: 3.0.0
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      hexo-util: registry.npmmirror.com/hexo-util/2.5.0
+      nunjucks: registry.npmmirror.com/nunjucks/3.2.3
+    transitivePeerDependencies:
+      - chokidar
+    dev: true
+
+  registry.npmmirror.com/hexo-util/2.5.0:
+    resolution: {integrity: sha1-3lY1NBEWuiVjp4mg6861WodSIa0=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/hexo-util/download/hexo-util-2.5.0.tgz}
+    name: hexo-util
+    version: 2.5.0
+    engines: {node: '>=12.4.0'}
+    dependencies:
+      bluebird: registry.npmmirror.com/bluebird/3.7.2
+      camel-case: registry.npmmirror.com/camel-case/4.1.2
+      cross-spawn: registry.npmmirror.com/cross-spawn/7.0.3
+      deepmerge: registry.npmmirror.com/deepmerge/4.2.2
+      highlight.js: registry.npmmirror.com/highlight.js/10.7.3
+      htmlparser2: registry.npmmirror.com/htmlparser2/6.1.0
+      prismjs: registry.npmmirror.com/prismjs/1.26.0
+      strip-indent: registry.npmmirror.com/strip-indent/3.0.0
+    dev: true
+
+  registry.npmmirror.com/highlight.js/10.7.3:
+    resolution: {integrity: sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/highlight.js/download/highlight.js-10.7.3.tgz}
+    name: highlight.js
+    version: 10.7.3
+    dev: true
+
+  registry.npmmirror.com/htmlparser2/6.1.0:
+    resolution: {integrity: sha1-xNditsM3GgXb5l6UrkOp+EX7j7c=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/htmlparser2/download/htmlparser2-6.1.0.tgz}
+    name: htmlparser2
+    version: 6.1.0
+    dependencies:
+      domelementtype: registry.npmmirror.com/domelementtype/2.2.0
+      domhandler: registry.npmmirror.com/domhandler/4.3.0
+      domutils: registry.npmmirror.com/domutils/2.8.0
+      entities: registry.npmmirror.com/entities/2.2.0
+    dev: true
+
+  registry.npmmirror.com/isexe/2.0.0:
+    resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/isexe/download/isexe-2.0.0.tgz}
+    name: isexe
+    version: 2.0.0
+    dev: true
+
+  registry.npmmirror.com/lower-case/2.0.2:
+    resolution: {integrity: sha1-b6I3xj29xKgsoP2ILkci3F5jTig=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/lower-case/download/lower-case-2.0.2.tgz}
+    name: lower-case
+    version: 2.0.2
+    dependencies:
+      tslib: registry.npmmirror.com/tslib/2.3.1
+    dev: true
+
+  registry.npmmirror.com/min-indent/1.0.1:
+    resolution: {integrity: sha1-pj9oFnOzBXH76LwlaGrnRu76mGk=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/min-indent/download/min-indent-1.0.1.tgz}
+    name: min-indent
+    version: 1.0.1
+    engines: {node: '>=4'}
+    dev: true
+
+  registry.npmmirror.com/no-case/3.0.4:
+    resolution: {integrity: sha1-02H9XJgA9VhVGoNp/A3NRmK2Ek0=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/no-case/download/no-case-3.0.4.tgz}
+    name: no-case
+    version: 3.0.4
+    dependencies:
+      lower-case: registry.npmmirror.com/lower-case/2.0.2
+      tslib: registry.npmmirror.com/tslib/2.3.1
+    dev: true
+
+  registry.npmmirror.com/nunjucks/3.2.3:
+    resolution: {integrity: sha1-GzNhUkcpDpTigmO12FXs52VkijE=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/nunjucks/download/nunjucks-3.2.3.tgz}
+    name: nunjucks
+    version: 3.2.3
+    engines: {node: '>= 6.9.0'}
+    hasBin: true
+    peerDependencies:
+      chokidar: ^3.3.0
+    peerDependenciesMeta:
+      chokidar:
+        optional: true
+    dependencies:
+      a-sync-waterfall: registry.npmmirror.com/a-sync-waterfall/1.0.1
+      asap: registry.npmmirror.com/asap/2.0.6
+      commander: registry.npmmirror.com/commander/5.1.0
+    dev: true
+
+  registry.npmmirror.com/pascal-case/3.1.2:
+    resolution: {integrity: sha1-tI4O8rmOIF58Ha50fQsVCCN2YOs=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/pascal-case/download/pascal-case-3.1.2.tgz}
+    name: pascal-case
+    version: 3.1.2
+    dependencies:
+      no-case: registry.npmmirror.com/no-case/3.0.4
+      tslib: registry.npmmirror.com/tslib/2.3.1
+    dev: true
+
+  registry.npmmirror.com/path-key/3.1.1:
+    resolution: {integrity: sha1-WB9q3mWMu6ZaDTOA3ndTKVBU83U=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/path-key/download/path-key-3.1.1.tgz}
+    name: path-key
+    version: 3.1.1
+    engines: {node: '>=8'}
+    dev: true
+
+  registry.npmmirror.com/prismjs/1.26.0:
+    resolution: {integrity: sha512-HUoH9C5Z3jKkl3UunCyiD5jwk0+Hz0fIgQ2nbwU2Oo/ceuTAQAg+pPVnfdt2TJWRVLcxKh9iuoYDUSc8clb5UQ==, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/prismjs/download/prismjs-1.26.0.tgz}
+    name: prismjs
+    version: 1.26.0
+    engines: {node: '>=6'}
+    dev: true
+
+  registry.npmmirror.com/shebang-command/2.0.0:
+    resolution: {integrity: sha1-zNCvT4g1+9wmW4JGGq8MNmY/NOo=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/shebang-command/download/shebang-command-2.0.0.tgz}
+    name: shebang-command
+    version: 2.0.0
+    engines: {node: '>=8'}
+    dependencies:
+      shebang-regex: registry.npmmirror.com/shebang-regex/3.0.0
+    dev: true
+
+  registry.npmmirror.com/shebang-regex/3.0.0:
+    resolution: {integrity: sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/shebang-regex/download/shebang-regex-3.0.0.tgz}
+    name: shebang-regex
+    version: 3.0.0
+    engines: {node: '>=8'}
+    dev: true
+
+  registry.npmmirror.com/strip-indent/3.0.0:
+    resolution: {integrity: sha1-wy4c7pQLazQyx3G8LFS8znPNMAE=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/strip-indent/download/strip-indent-3.0.0.tgz}
+    name: strip-indent
+    version: 3.0.0
+    engines: {node: '>=8'}
+    dependencies:
+      min-indent: registry.npmmirror.com/min-indent/1.0.1
+    dev: true
+
+  registry.npmmirror.com/tslib/2.3.1:
+    resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/tslib/download/tslib-2.3.1.tgz}
+    name: tslib
+    version: 2.3.1
+    dev: true
+
+  registry.npmmirror.com/which/2.0.2:
+    resolution: {integrity: sha1-fGqN0KY2oDJ+ELWckobu6T8/UbE=, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/which/download/which-2.0.2.tgz}
+    name: which
+    version: 2.0.2
+    engines: {node: '>= 8'}
+    hasBin: true
+    dependencies:
+      isexe: registry.npmmirror.com/isexe/2.0.0
+    dev: true
