@@ -12,10 +12,6 @@ jobs: # 工作流
   build: # 自定义名称
     runs-on: ubuntu-latest #运行在虚拟机环境ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps: # 步骤
       # 1.检出仓库
       - name: Checkout
@@ -23,15 +19,15 @@ jobs: # 工作流
 
       # 2. 设置pnpm包管理器
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
+        uses: pnpm/action-setup@v2
         with:
-          version: 6.15.1
+          version: 7
 
       # 3. 安装nodejs
-      - name: Set node version to ${{ matrix.node_version }}
-        uses: actions/setup-node@v2
+      - name: Set node version to 16
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node_version }}
+          node-version: 16
           cache: "pnpm" # 缓存
 
       # 4.安装依赖
